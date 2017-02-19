@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["es2017"],
+    "strictNullChecks": true,
+    "declarationDir": "node_modules/@types",
+    "removeComments": true,
+    "baseUrl": "./",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "outDir": "dist",
+    "types": [
+      "jasmine",
+      "node",
+      "commander"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": ["src/index.ts", "cli.ts"],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

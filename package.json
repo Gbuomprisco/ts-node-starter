@@ -1,0 +1,36 @@
+{
+  "name": "ts-node-starter",
+  "version": "0.0.1",
+  "description": "A starter for Node projects written with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-ts './tests/**/*.spec.ts'",
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "ts-node",
+    "ts-node starter",
+    "typescript node starter"
+  ],
+  "bin": {
+    "cli": "dist/cli.js"
+  },
+  "author": {
+    "name": "Giancarlo Buomprisco",
+    "email": "giancarlo@buompris.co"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/commander": "^2.3.31",
+    "@types/jasmine": "^2.5.43",
+    "@types/node": "^7.0.5",
+    "jasmine-spec-reporter": "^2.5.0",
+    "jasmine-ts": "0.0.3",
+    "ts-node": "^2.1.0",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
