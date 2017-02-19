@@ -1,6 +1,6 @@
 # ts-node-starter
 
-### A starter for Node projects written with Typescript
+A starter for Node projects written with Typescript
 
 ## Quick start
 
@@ -20,7 +20,7 @@ Write your Jasmine tests in the folder `tests` and then run:
 
 ### CLI
 
-Edit the file `cli.ts` to run your custom commands using [https://github.com/tj/commander.js/](Commander). Then:
+Edit the file `cli.ts` to run your custom commands using [Commander](https://github.com/tj/commander.js). Then:
 
     npm run build
     npm link
