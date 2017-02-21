@@ -8,15 +8,23 @@ A starter for Node projects written with Typescript
 
     npm install
 
+
 ### Compile Typescript
 
     npm run build
+
 
 ### Tests
 
 Write your Jasmine tests in the folder `tests` and then run:
 
     npm test
+
+
+To run the tests with coverage (using Istanbul), run:
+
+    npm test:coverage
+
 
 ### CLI
 
@@ -27,5 +35,4 @@ Edit the file `cli.ts` to run your custom commands using [Commander](https://git
 
     // now you can run your custom command
     my-custom-command ...
-
 

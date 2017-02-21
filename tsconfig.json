@@ -24,6 +24,9 @@
   "exclude": [
     "node_modules"
   ],
+  "include": [
+    "tests/**/*.spec.ts"
+  ],
   "files": ["src/index.ts", "cli.ts"],
   "compileOnSave": false,
   "buildOnSave": false,

@@ -4,7 +4,8 @@
   "description": "A starter for Node projects written with Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine-ts './tests/**/*.spec.ts'",
+    "test": "ts-node ./node_modules/.bin/jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "test:coverage": "npm run build && ./node_modules/.bin/istanbul cover ./node_modules/.bin/jasmine ./dist/tests/*.spec.js",
     "build": "tsc -p tsconfig.json"
   },
   "keywords": [
@@ -24,8 +25,9 @@
     "@types/commander": "^2.3.31",
     "@types/jasmine": "^2.5.43",
     "@types/node": "^7.0.5",
-    "jasmine-spec-reporter": "^2.5.0",
-    "jasmine-ts": "0.0.3",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.5.3",
+    "jasmine-spec-reporter": "^3.2.0",
     "ts-node": "^2.1.0",
     "tslint": "^4.4.2",
     "typescript": "^2.1.6"
